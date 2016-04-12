@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.albumListController">
+   <children>
+      <ListView fx:id="albumList" layoutX="14.0" layoutY="87.0" prefHeight="224.0" prefWidth="244.0" />
+      <Button fx:id="searchBtn" layoutX="534.0" layoutY="23.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Button fx:id="addBtn" layoutX="271.0" layoutY="286.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="89.0" text="Add Album" />
+      <Button fx:id="viewBtn" layoutX="488.0" layoutY="209.0" mnemonicParsing="false" onAction="#view" prefHeight="25.0" prefWidth="98.0" text="View Album" />
+      <Label layoutX="274.0" layoutY="100.0" text="Name:">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font></Label>
+      <Label fx:id="name" layoutX="428.0" layoutY="100.0" prefHeight="17.0" prefWidth="162.0" />
+      <Label layoutX="274.0" layoutY="177.0" text="Dates of Photos Taken:">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font></Label>
+      <Label fx:id="numOfPh" layoutX="427.0" layoutY="123.0" prefHeight="17.0" prefWidth="152.0" />
+      <Label fx:id="lastPh" layoutX="428.0" layoutY="149.0" prefHeight="17.0" prefWidth="162.0" />
+      <Label fx:id="range" layoutX="428.0" layoutY="177.0" prefHeight="17.0" prefWidth="132.0" />
+      <Button fx:id="deleteBtn" layoutX="274.0" layoutY="209.0" mnemonicParsing="false" onAction="#delete" text="Delete Album" />
+      <Button fx:id="renameBtn" layoutX="378.0" layoutY="209.0" mnemonicParsing="false" onAction="#rename" text="Rename Album" />
+      <Button fx:id="logOutBtn" layoutX="534.0" layoutY="354.0" mnemonicParsing="false" onAction="#logOut" text="Logout" />
+      <Label layoutX="274.0" layoutY="124.0" text="Number of Photos:">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="274.0" layoutY="150.0" text="Latest Photo Taken:">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="18.0" text="Photo Album">
+         <font>
+            <Font name="Verdana" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="72.0" text="List of Albums">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
